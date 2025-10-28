@@ -83,15 +83,16 @@
       >
         <h2 class="text-5xl">Pricing</h2>
         <div class="flex justify-between gap-4 py-3">
-          <div class="card rounded border">
-            <section class="p-5">
-              <h3 class="text-3xl">Basic</h3>
-              <p class="flex items-center text-base">$19/mo</p>
-            </section>
+          <div class="card flex flex-col gap-3 rounded border p-5">
+            <h3 class="text-3xl">Basic</h3>
+            <p class="text- flex items-center font-bold">$19/mo</p>
+            <p class="flex items-center text-base">✔ Feature One</p>
+            <p class="flex items-center text-base">✔ Feature Two</p>
+            <p class="flex items-center text-base">✔ Feature Three</p>
 
-            <p class="border-t bg-gray-200 p-5 text-sm">
-              No technical knowledge needed
-            </p>
+            <button class="w-full rounded-2xl bg-blue-500 p-3 text-white">
+              Choose Plan
+            </button>
           </div>
           <div class="card rounded border">
             <section class="p-5">
@@ -117,7 +118,7 @@
       </section>
 
       <section aria-label="pricing">
-        <div class="flex gap-1">
+        <div class="flex gap-1 border">
           <p>
             ✔ Feature One ✔ Feature Two ✔ Feature Three Choose Plan Pro
             $39/mo ✔ All Basic Features ✔ Extra Tools ✔ Priority Support
@@ -128,11 +129,11 @@
       </section>
       <section>
         <div class="flex gap-1">
+          <h2 class="text-center">What Our Users Say</h2>
           <p>
-            What Our Users Say “SaaSify transformed the way we work. The UI is
-            clean, and the onboarding was instant!” — Alex R., Product Manager
-            “Best value for money. We scaled up without breaking the bank.” —
-            Priya K., CTO
+            “SaaSify transformed the way we work. The UI is clean, and the
+            onboarding was instant!” — Alex R., Product Manager “Best value for
+            money. We scaled up without breaking the bank.” — Priya K., CTO
           </p>
         </div>
       </section>
@@ -140,7 +141,12 @@
 
     <!-- Footer -->
     <footer class="bg-gray-800 p-4 text-white">
-      <p>Privacy Terms Support. All rights reserved.</p>
+      <nav>
+        <a href="Privacy">Privacy</a>
+        <a href="Terms">Terms</a>
+        <a href="Support">Support</a>
+      </nav>
+      <small>All rights reserved.</small>
     </footer>
   </body>
 </html>
