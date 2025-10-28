@@ -4,10 +4,143 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Tailwind Example</title>
+    <script type="module" defer src="/src/main.js"></script>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
+  <body class="grid max-h-screen grid-rows-[auto_min-content_auto]">
+    <!-- Header -->
+    <header class="flex bg-gray-800 p-4 text-white">
+      <p>SaaSify</p>
+      <nav class="flex gap-1">
+        <div>Home</div>
+        <div>Features</div>
+        <div>Pricing</div>
+        <div>Contact</div>
+      </nav>
+    </header>
+    <!-- Main content -->
+    <main class="flex flex-col overflow-auto bg-white text-black">
+      <section
+        class="flex h-[80dvh] flex-col justify-center gap-7 bg-[#dbeafe] align-middle"
+        aria-label="hero"
+      >
+        <h1 class="text-center text-6xl">Empower your workflow with SaaSify</h1>
+        <p class="text-center text-xl">
+          Simple. Scalable. Supercharged productivity for modern teams.
+        </p>
+
+        <button class="mx-auto w-sm rounded bg-blue-400 py-6">
+          Get Started
+        </button>
+      </section>
+      <!-- // Hero-section  -->
+
+      <section
+        aria-label="features section"
+        class="flex flex-col items-center gap-1 px-5 py-20"
+      >
+        <h2 class="text-5xl">Features</h2>
+        <div class="flex justify-between gap-4 py-3">
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Fast Setup</h3>
+              <p class="flex items-center text-base">
+                Get started in minutes with intuitive onboarding.
+              </p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">
+              No technical knowledge needed
+            </p>
+          </div>
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Secure by Design</h3>
+              <p class="flex items-center text-base">
+                Enterprise-grade security built in from day one.
+              </p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">Trusted by thousands</p>
+          </div>
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Scalable</h3>
+              <p class="flex items-center text-base">
+                From startup to enterprise, scale as you grow.
+              </p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">Flexible pricing</p>
+          </div>
+        </div>
+      </section>
+      <!-- // Features section -->
+
+      <section
+        aria-label="pricing section"
+        class="flex flex-col items-center gap-1 px-5 py-20"
+      >
+        <h2 class="text-5xl">Pricing</h2>
+        <div class="flex justify-between gap-4 py-3">
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Basic</h3>
+              <p class="flex items-center text-base">$19/mo</p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">
+              No technical knowledge needed
+            </p>
+          </div>
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Secure by Design</h3>
+              <p class="flex items-center text-base">
+                Enterprise-grade security built in from day one.
+              </p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">Trusted by thousands</p>
+          </div>
+          <div class="card rounded border">
+            <section class="p-5">
+              <h3 class="text-3xl">Scalable</h3>
+              <p class="flex items-center text-base">
+                From startup to enterprise, scale as you grow.
+              </p>
+            </section>
+
+            <p class="border-t bg-gray-200 p-5 text-sm">Flexible pricing</p>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="pricing">
+        <div class="flex gap-1">
+          <p>
+            ✔ Feature One ✔ Feature Two ✔ Feature Three Choose Plan Pro
+            $39/mo ✔ All Basic Features ✔ Extra Tools ✔ Priority Support
+            Choose Plan Enterprise $79/mo ✔ Everything in Pro ✔ Custom
+            Solutions ✔ Dedicated Support Choose Plan
+          </p>
+        </div>
+      </section>
+      <section>
+        <div class="flex gap-1">
+          <p>
+            What Our Users Say “SaaSify transformed the way we work. The UI is
+            clean, and the onboarding was instant!” — Alex R., Product Manager
+            “Best value for money. We scaled up without breaking the bank.” —
+            Priya K., CTO
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 p-4 text-white">
+      <p>Privacy Terms Support. All rights reserved.</p>
+    </footer>
   </body>
 </html>
